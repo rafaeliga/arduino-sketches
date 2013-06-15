@@ -103,7 +103,7 @@ void loop() {
         
         if(currentLine.endsWith("HTTP/1.1")) {
           char *token;
-          char line[] = currentLine;
+          String line[10] = currentLine;
           char *search = "=";
 
           token = strtok(line, search);
